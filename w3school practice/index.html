@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3school practice</title>
+</head>
+
+<!--=====css style======-->
+<style>
+    body{
+        background-image: url('w2.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 10px;
+  
+  
+}
+
+ td , th{
+    
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    
+    border-radius: 10px;
+    
+}
+td:nth-child(even), th:nth-child(even){
+    background-color: yellowgreen;
+}
+tr:nth-child(odd){
+    background-color: royalblue;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+tr:hover{background-color: whitesmoke;
+    cursor: pointer;
+
+}
+caption{
+    color: seagreen;
+}
+
+hr:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+ul{
+    color: purple;
+}
+li{
+    color: saddlebrown;
+}
+h2{
+    text-transform: capitalize;
+}
+hr{
+  
+}
+</style>
+<!--=====css style end===========-->
+
+<body>
+    <h2>Background image</h2>
+<p>This is just practice</p>
+
+<picture>
+    <source media="(min-width: 450px)" srcset="img 1.jpg">
+    <source media="(min-width: 600px)" srcset="w3.jpg">
+    <img src="img 1.jpg" style="width: auto;">
+    </picture>
+<section>
+
+    <table style="width: 100%;">
+        <hr>
+        <!--HIDE COLUMNS STYLE FOR SAMPLE HIDE COLUMNS start-->
+<colgroup>
+    <col span="1">
+    <col span="1" style="visibility: collapse;">
+</colgroup>
+        <caption style="color:red">sample of hide columns</caption>
+        <P>check the style!!!!</P>
+<tr>
+    <th>company</th>
+    <th>contact</th>
+    <th>name</th>
+</tr>
+
+<tr>
+    <td>BHD</td>
+    <td>089832372</td>
+    <td>lucifer</td>
+</tr>
+
+<tr>
+    <td>LUCILA</td>
+    <td>9080978987095</td>
+    <td>suasan</td>
+</tr>
+
+    </table>
+</section>
+
+
+<!--section 2 of the table start-->
+
+<section>
+    <h3>SECTION 2 OF THE TABLE</h3>
+    <table style="40%">
+        <caption>MONTHLY SAVINGS</caption>
+    <tr>
+        <th>MONTHLY</th>
+        <th>SAVINGS</th>
+    </tr>
+    <tr>
+        <td>June</td>
+        <td>100dhs</td>
+    </tr>
+    
+    
+    
+    </table>
+</section>
+<!--section 2 of the table End-->
+
+<hr>
+
+<!--section 3 of the table start-->
+<section>
+    <h3>Section 3 table</h3>
+    <table>
+        <caption> Name and Phone</caption>
+        <tr>
+            <th>NAME</th>
+            <th>PHONE</th>
+       </tr>
+       <tr>
+           <td rowspan="2">Ana</td>
+           <td>5555-6666</td>
+       </tr>
+       <tr>
+           <td>7777-9999</td>
+       </tr>
+      </table>
+</section>
+<!--section 3 of the table End-->
+
+<hr style="height: 30px;" >
+
+<section>
+    <h2>HTML list unorder(dots)</h2>
+    <ul style="list-style-type: square;">
+        <li>ana</li>
+        <li>lizz</li>
+    </ul>
+    <h2>ORDERLIST</h2>
+    <ol style="list-style-type: circle;">
+        <li>ana</li>
+        <li>liza</li>
+    </ol>
+    <h2>Description List</h2>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- cold hot warm</dd>
+        <dt>analiza</dt>
+        <dd>- thin fat chubby</dd>
+    </dl>
+
+    <h2>NESTED LIST</h2>
+    <ul>
+        <li>tea</li>
+        <ul>
+            <li>black tea</li>
+            <li>green tea</li>
+        </ul>
+        <li>coffee</li>
+        <ul>
+            <li>nescafe</li>
+            <li>indocafe</li>
+        </ul>
+    </ul>
+
+</section>
+<hr>
+
+<!--ORDERED LIST THE "TYPE" ATTRIBUTE start-->
+<section>
+    <h2>ORDERED LIST THE "TYPE" ATTRIBUTE</h2>
+    <h3>with uppercase and lowercase</h3>
+    <p>example below:</p>
+
+    <ol type="1">
+        <li>tea</li>
+        <li>milk</li>
+        <li>coffee</li>
+    </ol>
+
+    <ol type="A">
+        <li>tea</li>
+        <li>milk</li>
+        <li>coffee</li>
+    </ol>
+
+    <ol type="a">
+        <li>tea</li>
+        <li>milk</li>
+        <li>coffee</li>
+    </ol>
+
+    <ol type="I">
+        <li>tea</li>
+        <li>milk</li>
+        <li>coffee</li>
+    </ol>
+    <ol type="i">
+        <li>tea</li>
+        <li>milk</li>
+        <li>coffee</li>
+    </ol>
+</section>
+<!--ORDERED LIST THE "TYPE" ATTRIBUTE End-->
+<hr style="height: 10px; background-color: saddlebrown;">
+<!--===Control Listing Count Start====-->
+<section>
+    <h2> control listing count</h2>
+<p> with 'START' attribute</p>
+    <ol start="10">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ol>
+    <p> with 'START and TYPE' attribute</p>
+    <ol type="i" start="10">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ol>
+</section>
+<!--===Control Listing Count End====-->
+
+<hr style="height: 10px; background-color: saddlebrown;">
+
+<!--==== Block level element start-->
+<section>
+    <h2>Block level Element</h2>
+
+    <div style="border: 1px solid purple; padding: 10px; text-align: center; background-color: salmon; border-radius: 50%; color:whitesmoke;"   >
+        <p>This is example of a div element. You can create a STYLE. When used together with CSS, the element can be used to style blocks of content.</p>
+      </div>
+      <hr>
+<div style="color: rgb(28, 29, 29); background-color: tomato; border: 2px solid black; border-bottom:2px solid blue; padding: 20px; margin: 20px; text-align: left;" >
+    <p>this example of a div style</p>
+  </div>
+  <hr>
+  <div style="border:1.5px solid blueviolet;margin: 50px;">hello everyone</div>
+</section>
+<!--==== Block level element End-->
+<hr>
+<!--===Inline Elements start===-->
+<section>
+    <h2>Inline Elements</h2>
+    <p>This is an inline <b>SPAN </b><span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+</section>
+
+<!--===Inline Elements End===-->
+<hr style="height: 10px; background-color: saddlebrown;">
+
+<!--===Using the class attribute start===-->
+<style>
+    .city{
+        border-width:100%;
+        border: 1.5px solid black;
+        background-color: palevioletred;
+        color: whitesmoke;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+</style>
+
+<h2>Using "CLASS" attribute</h2>
+<div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+  </div>
+
+ 
+  <hr style="height: 10px; background-color: saddlebrown;">
+  <!--===Using the note value start===-->
+  <style>
+      .note{
+          font-size:150%;
+          color: darkorchid;
+      }
+  </style>
+  <h2>Using the note value</h2>
+
+<h1>My <span class="note">Important</span> heading.</h1>
+<p>This is <span class="note">important</span> text.</p>
+
+ <!--===Using the note value End===-->
+ <hr style="height: 10px; background-color: saddlebrown;">
+<!--style here check up style area-->
+<!--"Class" attribute can be used to determine the name you'd give for styling-->
+ <h2>The class Attribute</h2>
+ <p>Use CSS to style elements with the class name "city":</p>
+
+ <h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+<hr>
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+
+ <!--===Using the class attribute End===-->
+
+ <hr style="height: 10px; background-color: saddlebrown;">
+
+ <!--====The class attribute in JavaScript start=======-->
+ <h2>The class attribute in JavaScript</h2> 
+ <p>Clicked the button to hide all elements with the class name "COUNTRY":</p>
+
+ <button onclick="myFunction()">Hide Elements</button>
+
+ <h2 class="country">London</h2>
+<p>London is the capital of England. </p>
+
+<h2 class="country">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<style>
+    .country{
+        color: red;
+    }
+    button{
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function myFunction(){
+        var x = document.getElementsByClassName("country");
+        for (var i = 1; 0 < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+</script>
+
+     <!--====The class attribute in JavaScript End=======-->
+     <hr style="height: 10px; background-color: saddlebrown;">
+
+     <!--===Using The id Attribute=-->
+
+    <h3>Using The "id" Attribute</h3>
+
+    <h1 id="myHeader">My Header</h1>
+
+<style>
+    #myHeader{
+        background-color: red;
+        color: seashell;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+</style>
+
+<h2>==Bookmarks with ID and Links==</h2>
+
+
+
+</body>
+</html>
